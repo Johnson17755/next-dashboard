@@ -62,3 +62,26 @@ next is seed database. check package.json seed. seed is a routes handler This
 creates a server-side endpoint that you can access in the browser to start populating your database.
 
                 choosing how to fetch data
+Fetch the last 5 invoices, sorted by date
+import fetchlatestInvoices, await it.
+What are request waterfalls?
+A "waterfall" refers to a sequence of network requests that depend on the completion of previous requests. 
+In the case of data fetching, each request can only begin once the previous request has returned data.
+
+static and dynamic rendering.
+
+Streaming is a data transfer technique that allows you to break down a route into 
+smaller "chunks" and progressively stream them from the server to the client as they become ready.
+Streaming works well with React's component model, as each component can be considered a chunk.
+
+There are two ways you implement streaming in Next.js:
+
+9
+At the page level, with the loading.tsx file.
+For specific components, with <Suspense>
+loading.tsx, after creating the file you dont need to import it.
+loading.tsx is a special Next.js file built on top of Suspense, it allows you to create fallback UI to show as a replacement while page content loads.
+Since <SideNav> is static, it's shown immediately. The user can interact with <SideNav> while the dynamic content is loading.
+Inside your loading.tsx file, import a new component called <DashboardSkeleton>:
+
+/(overview)
