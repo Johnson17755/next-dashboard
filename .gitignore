@@ -48,3 +48,17 @@ the purpose for the layout is to share  sidebar, apart from sidebar any form of 
 it help with (dry principle) only on the parent.
 
 once done with usePathname, now is setting up to database.
+
+    postgress database power by neon
+go to storage. click on create, select postgre neon. 
+development name: dashboard. or you can name it as you see fit.
+creat and connect click. go to env.log to see your password.
+
+.env*.local
+.env make sure this is on your gitignore file so it wont deploy to git hub.
+
+npm i @vercel/postgre this is use to connect to vercel database.
+next is seed database. check package.json seed. seed is a routes handler This 
+creates a server-side endpoint that you can access in the browser to start populating your database.
+
+                choosing how to fetch data

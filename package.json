@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "seed": "node -r dotenv/config ./scripts/seed.js",
     "dev": "next dev --turbopack",
     "start": "next start"
   },
@@ -17,6 +18,7 @@
     "postcss": "8.4.49",
     "react": "19.0.0",
     "react-dom": "19.0.0",
+    "seed": "^0.4.4",
     "tailwindcss": "3.4.16",
     "typescript": "5.7.2",
     "use-debounce": "^10.0.4",
