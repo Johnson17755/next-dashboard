@@ -84,4 +84,25 @@ loading.tsx is a special Next.js file built on top of Suspense, it allows you to
 Since <SideNav> is static, it's shown immediately. The user can interact with <SideNav> while the dynamic content is loading.
 Inside your loading.tsx file, import a new component called <DashboardSkeleton>:
 
-/(overview)
+/(overview) delay scheduled
+Now, the loading.tsx file will only apply to your dashboard overview page.
+
+Route groups allow you to organize files into logical groups without affecting the URL path structure. 
+When you create a new folder using parentheses (), the name won't be included in the URL path. 
+So /dashboard/(overview)/page.tsx becomes /dashboard.
+
+Here, you're using a route group to ensure loading.tsx only applies to your dashboard overview page. 
+However, you can also use route groups to separate your application into sections 
+(e.g. (marketing) routes and (shop) routes) or by teams for larger applications.
+
+11
+search and pagination implimentation and functionality.
+pnpm i use-debounce
+This function will wrap the contents of handleSearch, and only run the code after a specific time once the user has stopped typing (300ms).
+
+    server action. 12
+You'll notice that amount is of type string and not number.
+ This is because input elements with type="number" actually return a string, not a number!
+
+ Handling all errors with 13
+ 
